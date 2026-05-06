@@ -1,0 +1,17 @@
+{
+  "name": "@cas8398/bridge-cli",
+  "version": "1.0.0",
+  "description": "Write logic once in .bridge and compile to PHP, TypeScript, and Node.js.",
+  "bin": {
+    "bridge": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.0.0"
+  }
+}
