@@ -1,13 +1,38 @@
 {
   "name": "@cas8398/bridge-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write logic once in .bridge and compile to PHP, TypeScript, and Node.js.",
+  "type": "module",
   "bin": {
     "bridge": "./dist/cli.js"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "bridge-wrapper.js",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/cli.ts"
+  },
+  "keywords": [
+    "bridge",
+    "cli",
+    "compiler",
+    "php",
+    "typescript",
+    "codegen",
+    "cross-platform"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cas8398/bridge-cli.git"
+  },
+  "homepage": "https://github.com/cas8398/bridge-cli#readme",
+  "engines": {
+    "node": ">=18"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
